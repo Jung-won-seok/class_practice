@@ -1,4 +1,6 @@
-public class Unit{
+package StarCraft;
+
+public abstract class Unit{
     protected int hp;
     protected int location;
     protected String name;
@@ -13,14 +15,8 @@ public class Unit{
         this.hp--;
     }
 
-    public void move(int location){
-        this.location = location;
-    }
+    abstract void move(int location);
 
-    public void attack(Unit subject){
-        System.out.println(this.name+"이"+subject.toString()+"를 기관총으로 쏜다.");
-        subject.reducehp();
-    }
 
 
     public String toString(){
