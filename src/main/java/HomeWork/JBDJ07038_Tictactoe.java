@@ -2,7 +2,7 @@ package HomeWork;
 
 import java.util.Scanner;
 
-public class tictactoe {
+public class JBDJ07038_Tictactoe {
     public static char[][] board;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -42,11 +42,11 @@ public class tictactoe {
     public static void row_test() { //가로 검사
         for (int p = 0; p < 3; p++) {
             if (board[p][0] == 'O' && board[p][1] == 'O' && board[p][2] == 'O') {
-                System.out.println("1번 플레이어의 승리!");
+                System.out.println("Computer Win");
                 return;
             }
             if (board[p][0] == 'X' && board[p][1] == 'X' && board[p][2] == 'X') {
-                System.out.println("2번 플레이어의 승리!");
+                System.out.println("You Win");
                 return;
             }
         }
@@ -55,11 +55,11 @@ public class tictactoe {
     public static void col_test() { //세로 검사
         for (int p = 0; p < 3; p++) {
             if (board[0][p] == 'O' && board[1][p] == 'O' && board[2][p] == 'O') {
-                System.out.println("1번 플레이어의 승리!");
+                System.out.println("Computer Win!");
                 return;
             }
             if (board[0][p] == 'X' && board[1][p] == 'X' && board[2][p] == 'X') {
-                System.out.println("2번 플레이어의 승리!");
+                System.out.println("You Win");
                 return;
             }
         }
@@ -67,10 +67,10 @@ public class tictactoe {
 
     public static void cross_test() { //대각선 검사
         if (board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O') {
-            System.out.println("1번 플레이어의 승리!");
+            System.out.println("Computer Win");
         }
         if (board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X') {
-            System.out.println("2번 플레이어의 승리!");
+            System.out.println("You Win");
         }
     }
 
