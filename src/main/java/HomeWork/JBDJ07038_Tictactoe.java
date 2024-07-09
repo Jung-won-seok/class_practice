@@ -14,6 +14,7 @@ public class JBDJ07038_Tictactoe {
             }
         }
 
+        //모델(메서드) 뷰(화면) 컨트롤러(중재자)
         for (int i = 1; i <= 9; i++) {
             board_state(); //현재 board 상태
 
