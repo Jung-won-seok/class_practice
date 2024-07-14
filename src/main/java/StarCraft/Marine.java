@@ -11,7 +11,8 @@ public class Marine extends Unit implements Attackable{
     }
 
     @Override
-    public void attack(Unit subject){
+    public void attack(Unit subject){ //subject를 공격하는 것이다.
+
         System.out.println(this.name+"이"+subject.toString()+"를 기관총으로 쏜다.");
         subject.reducehp();
     }

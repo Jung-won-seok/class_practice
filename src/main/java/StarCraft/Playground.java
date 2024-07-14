@@ -11,9 +11,11 @@ public class Playground{
 
         // med1.attack(z1);
         // ((Attackable)m1).attack(m2);
-        // ((Attackable)z1).attack(m1);
+        ((Attackable)z1).attack(m1); //질럿이 마린을 공격한다.
+        System.out.println(m1.hp);
         // ze1.attack(m1);
         // hydra.attack(z1);
+        /*
         Unit[] units = {m1, m2, z1, ze1, hydra, med1};
 
         for(Unit u : units){
@@ -21,5 +23,6 @@ public class Playground{
                 ((Attackable)u).attack(ze1);
             }
         }
+         */
     }
 }

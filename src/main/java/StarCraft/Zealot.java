@@ -8,7 +8,7 @@ public class Zealot extends Unit implements Attackable {
     @Override
     public void attack(Unit subject) {
         System.out.println(this.name + "이" + subject.toString() + "를 칼로 찌른다.");
-        subject.reducehp();
+        subject.hp -= 5;
     }
 
     @Override
