@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Tank extends Terran implements Attack{
     public Tank(){
-        super(7, 15, "ground");
+        super(7, 15, "ground", "Tank");
     }
 
     @Override

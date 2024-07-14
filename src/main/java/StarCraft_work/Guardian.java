@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Guardian extends Zerg implements Attack{
     public Guardian(){
-        super(3, 6, "fly");
+        super(3, 6, "fly", "Guardian");
     }
 
     @Override

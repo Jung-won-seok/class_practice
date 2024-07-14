@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class HighTempler extends Protoss implements Attack{
     public HighTempler(){
-        super(10, 2, "ground");
+        super(10, 2, "ground", "HighTempler");
     }
 
     @Override

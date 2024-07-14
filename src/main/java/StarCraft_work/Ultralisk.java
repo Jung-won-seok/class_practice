@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Ultralisk extends Zerg implements Attack{
     public Ultralisk(){
-        super(5, 15, "ground");
+        super(5, 15, "ground", "Ultralisk");
     }
 
     @Override

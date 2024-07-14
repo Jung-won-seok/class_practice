@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Wraith extends Terran implements Attack{
     public Wraith(){
-        super(3, 10, "fly");
+        super(3, 10, "fly", "Wraith");
     }
 
     @Override

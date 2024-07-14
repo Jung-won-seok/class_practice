@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Corsair extends Protoss implements Attack{
     public Corsair(){
-        super(4, 12, "fly");
+        super(4, 12, "fly", "Corsair");
     }
 
     @Override

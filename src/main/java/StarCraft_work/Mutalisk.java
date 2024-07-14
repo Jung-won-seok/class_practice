@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Mutalisk extends Zerg implements Attack{
     public Mutalisk(){
-        super(2, 15, "fly");
+        super(2, 15, "fly", "Mutalisk");
     }
 
     @Override

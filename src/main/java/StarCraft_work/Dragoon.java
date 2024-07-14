@@ -2,7 +2,7 @@ package StarCraft_work;
 
 public class Dragoon extends Protoss implements Attack{
     public Dragoon(){
-        super(3, 15, "ground");
+        super(3, 15, "ground", "Dragoon");
     }
 
     @Override
