@@ -1,4 +1,4 @@
 package CannonGame_2;
 
-public class Main {
+public class Dimension {
 }
