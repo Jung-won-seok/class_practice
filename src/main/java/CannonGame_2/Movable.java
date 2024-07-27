@@ -1,4 +1,8 @@
 package CannonGame_2;
+public interface Movable extends Regionable {
+    void setMotion(Vector motion);
 
-public class Movable {
+    Vector getMotion();
+
+    void move();
 }
