@@ -12,15 +12,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    static final int FRAME_WIDTH = 1000;
+    static final int FRAME_WIDTH = 950;
     static final int FRAME_HEIGHT = 600;
     static final int DT = 10;
-    static final int STATIC_BOX_COUNT = 5;
-    static final int BOX_MIN_WIDTH = 10;
-    static final int BOX_MAX_WIDTH = 100;
-    static final int BOX_MIN_HEIGHT = 10;
-    static final int BOX_MAX_HEIGHT = 100;
-    static final int MOVABLE_BALL_COUNT = 5;
     static final int BALL_MIN_RADIUS = 5;
     static final int BALL_MAX_RADIUS = 30;
     static final int BALL_MIN_SPEED = 1;
@@ -43,33 +37,85 @@ public class Main {
 
         // 고정된 상자 추가
         // 고정된 상자의 크기와 위치를 랜덤하게 설정하고 BoundedWorld에 추가합니다.
-        /*
-        for (int i = 0; i < 2; i++) {
-            int width = 200;
-            int height = 200;
-            int x = 200;
-            int y = 200;
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 150;
+            int y = 70;
             world.add(new PaintableBox(x, y, width, height, Color.RED));
-            x+=400;
+            x+=300;
         }
-            */
-
-        while (world.getCount() < STATIC_BOX_COUNT) {
-            int width = BOX_MIN_WIDTH + random.nextInt(BOX_MAX_WIDTH - BOX_MIN_WIDTH);
-            int height = BOX_MIN_HEIGHT + random.nextInt(BOX_MAX_HEIGHT - BOX_MIN_HEIGHT);
-            int x = width / 2 + random.nextInt(world.getWidth() - width);
-            int y = height / 2 + random.nextInt(world.getHeight() - height);
-
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 350;
+            int y = 70;
             world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 550;
+            int y = 70;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 750;
+            int y = 70;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 150;
+            int y = 140;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 350;
+            int y = 140;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 550;
+            int y = 140;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 150;
+            int height = 50;
+            int x = 750;
+            int y = 140;
+            world.add(new PaintableBox(x, y, width, height, Color.RED));
+            x+=300;
+        }
+        for (int i = 0; i < 1; i++) {
+            int width = 300;
+            int height = 20;
+            int x = 450;
+            int y = 500;
+            world.add(new PaintableBox(x, y, width, height, Color.gray));
+            x+=300;
         }
 
-
-        while (world.getCount() < STATIC_BOX_COUNT + MOVABLE_BALL_COUNT) {
-            int radius = BALL_MIN_RADIUS + random.nextInt(BALL_MAX_RADIUS - BALL_MIN_RADIUS);
+        while (world.getCount() < 11) {
+            int radius = 28;
             int x = radius + random.nextInt(world.getWidth() - 2 * radius);
             int y = radius + random.nextInt(world.getHeight() - 2 * radius);
 
-            MovableBall ball = new MovableBall(x, y, radius, Color.GREEN);
+            MovableBall ball = new MovableBall(x, y, radius, Color.lightGray);
 
             boolean collision = false;
             for (int i = 0; !collision && i < world.getCount(); i++) {

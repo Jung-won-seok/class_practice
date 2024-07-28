@@ -1,5 +1,6 @@
+package Practice;
+
 import java.util.Scanner;
-import java.util.Stack;
 
 public class practice {
     public static void main(String[] args) {

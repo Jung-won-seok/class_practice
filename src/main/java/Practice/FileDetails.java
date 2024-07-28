@@ -1,9 +1,11 @@
+package Practice;
+
 import java.io.*;
 
 public class FileDetails {
     public static void main(String[] args) {
         if (args.length != 1) {
-            System.out.println("Usage: java FileDetails FileName");
+            System.out.println("Usage: java Practice.FileDetails FileName");
             return;
         }
         String fileName = args[0];

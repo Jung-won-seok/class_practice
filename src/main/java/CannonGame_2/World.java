@@ -1,6 +1,4 @@
 package CannonGame_2;
-
-
 import java.util.List;
 import java.util.LinkedList;
 import java.awt.Graphics;

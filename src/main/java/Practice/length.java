@@ -1,3 +1,5 @@
+package Practice;
+
 public class length {
     static int addAll(int...k){
         int result = 0;

@@ -15,13 +15,13 @@ public class TestDemo {
     @RepeatedTest(10)
     void failingTest(RepetitionInfo repetitionInfo){
         if (repetitionInfo.getCurrentRepetition() == 3) {
-            fail("a failing test");
+            fail("a failing Practice.test");
         }
     }
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3, 4})
     void testParameterizedTest(int n){
         if(n==3)
-            fail("a failing test");
+            fail("a failing Practice.test");
     }
 }

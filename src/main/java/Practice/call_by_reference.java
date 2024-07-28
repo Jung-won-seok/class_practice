@@ -1,3 +1,5 @@
+package Practice;
+
 public class call_by_reference {
     static void m(int[] array){
         array[0] = 5;

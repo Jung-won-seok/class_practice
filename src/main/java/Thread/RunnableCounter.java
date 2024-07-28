@@ -4,7 +4,7 @@ public class RunnableCounter implements Runnable {
     static final int DEFALULT_MAX_COUNT = 10;
     static final int DEFAULT_INTERVAL = 1000;
     static int totalCount = 0;
-    static Count totalCount = new Count();
+    //static Count totalCount = new Count();
     String name;
     int maxCount = DEFALULT_MAX_COUNT;
     int interval = DEFAULT_INTERVAL;
@@ -64,9 +64,9 @@ public class RunnableCounter implements Runnable {
         // Thread.sleep(10000);
         thread1.join();
         thread2.join();
-        System.out.println("Counter1 : " + counter1.getCount());
-        System.out.println("Counter1 2 " + counter1.getCount());
-        System.out.println("Totla Count:  : " + RunnableCounter.totalCount.getCount());
+        //System.out.println("Counter1 : " + counter1.getCount());
+        //System.out.println("Counter1 2 " + counter1.getCount());
+        //System.out.println("Totla Count:  : " + RunnableCounter.totalCount.getCount());
     }
 }
 // sleep을 쓸 땐 try, catch를 사용하는 이유?

@@ -7,7 +7,7 @@ public class SharedCounter extends Thread {
 
     public SharedCounter(String name, int maxCount, SharedCounter sharedCount) {
         setName(name);
-        this.sharedCount = sharedCount;
+        //this.sharedCount = sharedCount;
         this.maxCount = maxCount;
         count = 0;
     }

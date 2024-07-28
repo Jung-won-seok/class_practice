@@ -1,3 +1,5 @@
+package Practice;
+
 public class Rational{
     public double son;
     public double parent;

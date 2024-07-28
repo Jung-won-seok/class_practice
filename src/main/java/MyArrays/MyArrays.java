@@ -136,6 +136,6 @@ public class MyArrays {
 ////abcdefghijklmnopqrstuvwxyz
 //int[] num = new int[26];
 //char[] arrChar = string.toCharArray();
-//        for (int i = 0; i < arrChar.length; i++) {
+//        for (int i = 0; i < arrChar.Practice.length; i++) {
 //        Character.isLowerCase(arrChar[i]);
 //        }
