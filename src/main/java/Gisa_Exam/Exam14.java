@@ -4,25 +4,24 @@ public class Exam14 {
     int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     int sum = 0;
 
-    public int check(boolean odd){
+    public void check(boolean input){
         sum = 0;
         for(int i : arr){
-            Cal cal = (boolean o) -> {
+            Cal cal = (o) -> {
                 if((o && i % 2 != 0) || (!o && i % 2 == 0)) sum += i;
                 return true;
             };
-            cal.cals(odd);
+            cal.cals(input);
         }
-        return sum;
+        System.out.println(sum);
     }
-
     public static void main(String[] args) {
         Exam14 ex = new Exam14();
-        System.out.println(ex.check(true));
-        System.out.println(ex.check(false));
+        ex.check(true);
+        ex.check(false);
     }
 }
 
 interface Cal {
-    boolean cals(boolean odd);
+    boolean cals(boolean o);
 }
