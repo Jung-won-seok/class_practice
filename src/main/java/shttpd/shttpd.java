@@ -1,5 +1,4 @@
 package shttpd;
-
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.DirectoryStream;

@@ -1,11 +1,11 @@
 package Thread;
 
 public class ThreadCounter extends Thread {
-    static final int DEFALULT_MAX_COUNT = 10;
-    static final int DEFAULT_INTERVAL = 1000;
+    //static final int DEFALULT_MAX_COUNT = 10;
+    //static final int DEFAULT_INTERVAL = 1000;
     String name;
-    int maxCount = DEFALULT_MAX_COUNT;
-    int interval = DEFAULT_INTERVAL;
+    int maxCount;
+    int interval=1000;
     int count;
 
     public ThreadCounter(String name, int maxCount) {
@@ -27,12 +27,11 @@ public class ThreadCounter extends Thread {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ThreadCounter counter1 = new ThreadCounter("counter", 10);
-        ThreadCounter counter2 = new ThreadCounter("counter", 10);
+        ThreadCounter counter1 = new ThreadCounter("counter", 5);
+        ThreadCounter counter2 = new ThreadCounter("counter", 5);
 
         counter1.start();
         counter2.start();
-        Thread.sleep(10000);
-
+        Thread.sleep(1000);
     }
 }
